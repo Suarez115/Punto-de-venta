@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F947CF77-EE17-4F47-B69C-8E9ED4EF0081}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_Final_Lenguajes</RootNamespace>
+    <AssemblyName>Proyecto Final Lenguajes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBusquedaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaClientes.Designer.cs">
+      <DependentUpon>FrmBusquedaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaFacturas.Designer.cs">
+      <DependentUpon>FrmBusquedaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaProductos.Designer.cs">
+      <DependentUpon>FrmBusquedaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaUsuarios.Designer.cs">
+      <DependentUpon>FrmBusquedaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaCuentasCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaCuentasCobrar.Designer.cs">
+      <DependentUpon>FrmBusquedaCuentasCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturacion.Designer.cs">
+      <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBusquedaClientes.resx">
+      <DependentUpon>FrmBusquedaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaFacturas.resx">
+      <DependentUpon>FrmBusquedaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaProductos.resx">
+      <DependentUpon>FrmBusquedaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaUsuarios.resx">
+      <DependentUpon>FrmBusquedaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaCuentasCobrar.resx">
+      <DependentUpon>FrmBusquedaCuentasCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturacion.resx">
+      <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j0432537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono-Usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono-Contraseña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{d268f2b8-57aa-4436-9cf4-7f52d2e19712}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{bceaa8c4-7f09-4582-8a38-5f540e992a30}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TítuloFRMPrincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusquedaUsuariosTitulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginTxtDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginTxtDosV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContrasenaTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfirmacionTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EstadoTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BúsquedaProductosTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodigoBarraDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DescripcionTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModuloProductoTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrecioVentaTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrecioDescuentoTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impuesto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnidadMedidatxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrecioCompratxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExistenciaTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16 %28Delete%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtModuloFacturas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtNumeroFacturaDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtModuloFacturas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtCantidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtCambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtTotalPagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtCedulaCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TxtFacturasCobrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtModuloClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtTipoCedulaDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtClienteDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtEmailDos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtEstado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoFinalFrmPrincipal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
